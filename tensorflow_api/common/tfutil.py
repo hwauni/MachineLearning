@@ -46,7 +46,8 @@ def get_var_value(var):
 
 def get_operation_value(op):
     sess = tf.InteractiveSession()
-    init = tf.initialize_all_variables()
+    #init = tf.initialize_all_variables()
+    init = tf.global_variables_initializer()
     sess.run(init)
     ret_opt = sess.run(op)
     sess.close()
