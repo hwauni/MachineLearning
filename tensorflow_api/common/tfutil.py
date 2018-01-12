@@ -10,10 +10,11 @@ def print_constant(const):
 
 def print_constant_details(const):
     sess = tf.InteractiveSession()
+    print("constant details")
     print(const.eval())
-    print(tf.shape(const))
-    print(tf.size(const))
-    print(tf.rank(const))
+    print("shape" , sess.run(tf.shape(const)), 
+        "rank" , sess.run(tf.rank(const)),
+        "size" , sess.run(tf.size(const)))
     sess.close()
 
 def get_const_value(const):
@@ -31,10 +32,11 @@ def print_variable(var):
 def print_variable_details(var):
     sess = tf.InteractiveSession()
     var.initializer.run()
+    print("variable details")
     print(var.eval())
-    print(tf.shape(var))
-    print(tf.size(var))
-    print(tf.rank(var))
+    print("shape" , sess.run(tf.shape(var)), 
+        "rank" , sess.run(tf.rank(var)),
+        "size" , sess.run(tf.size(var)))
     sess.close()
 
 def get_var_value(var):
