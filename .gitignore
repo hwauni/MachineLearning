@@ -215,5 +215,6 @@ venv.bak/
 
 # MNIST
 mnist/
+logs/
 
 # End of https://www.gitignore.io/api/c,git,c++,java,cmake,python
