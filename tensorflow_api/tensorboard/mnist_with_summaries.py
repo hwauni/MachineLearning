@@ -207,7 +207,7 @@ if __name__ == '__main__':
       '--log_dir',
       type=str,
       default=os.path.join(os.getenv('TEST_TMPDIR', './'),
-                           'mnist/logs/mnist_with_summaries'),
+                           'logs/mnist_with_summaries'),
       help='Summaries log directory')
   FLAGS, unparsed = parser.parse_known_args()
   tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)

@@ -15,7 +15,7 @@ learning_rate = 0.001
 training_epochs = 15
 batch_size = 100
 
-TB_SUMMARY_DIR = './mnist/logs/mnist_tensorboard'
+TB_SUMMARY_DIR = './logs/mnist_tensorboard'
 
 # input place holders
 X = tf.placeholder(tf.float32, [None, 784])
